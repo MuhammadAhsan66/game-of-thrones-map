@@ -17,11 +17,11 @@ class ViewController {
     this.searchService = new SearchService() // Initialize search service
 
     // Initialize API service
-    if (window.location.hostname === 'localhost') {
-      this.api = new ApiService('http://localhost:5000/')
-    } else {
-      this.api = new ApiService('https://api.atlasofthrones.com/')
-    }
+    // if (window.location.hostname === 'localhost') {
+    this.api = new ApiService('http://localhost:5000/')
+    // } else {
+      // this.api = new ApiService('https://api.atlasofthrones.com/')
+    // }
 
     this.locationPointTypes = [ 'castle', 'city', 'town', 'ruin', 'region', 'landmark' ]
     this.initializeComponents()

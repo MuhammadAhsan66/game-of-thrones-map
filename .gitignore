@@ -3,7 +3,6 @@ node_modules
 .env
 data
 .vscode
-public/bundle.js
 database_setup/**/*.json
 *.log
 ignore
